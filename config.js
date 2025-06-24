@@ -12,7 +12,7 @@ import axios from 'axios'
   [ '573133374132', 'AdrianOficial', true ],
   [ '172056423456949@lid', 'Barboza', true ],
   [ '573162402768', 'BAJO BOTS', true ],
-  [ '', true ],
+  [ '50493732693', true ],
   [ '', true ],
   [ '', true ]
   ]
