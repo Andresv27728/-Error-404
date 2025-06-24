@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
       caption: info
     }, { quoted: m });
 
-    const downloadApi = `https://theadonix-api.vercel.app/api/ytmp42?query=${video.url}`;
+    const downloadApi = `https://theadonix-api.vercel.app/api/ytmp3?query=${video.url}`;
     const downloadResponse = await fetch(downloadApi);
     const downloadData = await downloadResponse.json();
 
