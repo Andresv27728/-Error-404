@@ -11,14 +11,14 @@ export async function before(m, { conn, participants, groupMetadata}) {
       participants: '0@s.whatsapp.net',
       remoteJid: 'status@broadcast',
       fromMe: false,
-      id: 'Miku🌸'
+      id: 'Gawr Gura'
 },
     message: {
       contactMessage: {
         vcard: `BEGIN:VCARD
 VERSION:3.0
-N:Miku;Bot;;;
-FN:Miku Bot 🌸
+N:Gawr;gura;;;
+FN:'Gawr Gura 🦈
 item1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}
 item1.X-ABLabel:Celular
 END:VCARD`
