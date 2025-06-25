@@ -88,13 +88,13 @@ export async function handler(chatUpdate) {
                 if (!('bienvenida' in chat))
                     chat.bienvenida = false 
                 if (!('antiLink' in chat))
-                    chat.antiLink = true
+                    chat.antiLink = false
                 if (!('detect' in chat)) 
                     chat.detect = true
                 if (!('onlyLatinos' in chat))
                     chat.onlyLatinos = false
                 if (!('audios' in chat))
-                    chat.audios = true
+                    chat.audios = false
                 if (!('modoadmin' in chat))
                     chat.modoadmin = false
                 if (!('nsfw' in chat))
@@ -102,35 +102,35 @@ export async function handler(chatUpdate) {
                 if (!isNumber(chat.expired))
                     chat.expired = 0
                 if (!('antiLag' in chat))
-                    chat.antiLag = true
+                    chat.antiLag = false
                 if (!('per' in chat))
                     chat.per = []
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
                     bienvenida: false,
-                    antiLink: true,
+                    antiLink: false,
                     detect: true,
                     onlyLatinos: false,
                     nsfw: false,
-                    audios: true,
+                    audios: false,
                     modoadmin: false, 
                     expired: 0, 
-                    antiLag: true,
+                    antiLag: false,
                     per: [],
                 }
             var settings = global.db.data.settings[this.user.jid]
             if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
             if (settings) {
                 if (!('self' in settings)) settings.self = false
-                if (!('autoread' in settings)) settings.autoread = true
+                if (!('autoread' in settings)) settings.autoread = false
                 if (!('antiPrivate' in settings)) settings.antiPrivate = false
                 if (!('antiPrivate2' in settings)) settings.antiPrivate2 = false
                 if (!('antiBot2' in settings)) settings.antiBot2 = false
                 if (!('antiSpam' in settings)) settings.antiSpam = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: true,
+                autoread: false,
                 antiPrivate: false,
                 antiPrivate2: false,
                 antiBot2: true,
@@ -454,7 +454,7 @@ if (m.chat === groupLimitado && !comandosPermitidos.includes(command)) {
 
 global.dfail = (type, m, conn, usedPrefix) => {
     let msg = {
-        rowner: "⚠️🚫`𝗣𝗲𝗿𝗱𝗼𝗻, 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼 𝗲𝘀 𝘀𝗼𝗹𝗼 𝗽𝗮𝗿𝗮 𝗺𝗶 𝗢𝘄𝗻𝗲𝗿`⚠️🚫",
+        rowner: "❌🚫`𝗣𝗲𝗿𝗱𝗼𝗻, 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼 𝗲𝘀 𝘀𝗼𝗹𝗼 𝗽𝗮𝗿𝗮 𝗺𝗶 𝗢𝘄𝗻𝗲𝗿`🚫❌",
         owner: " _*`🛑 𝗣𝗲𝗿𝗱𝗼𝗻, 𝘀𝗼𝗹𝗼 𝗺𝗶 𝗰𝗿𝗲𝗮𝗱𝗼𝗿 𝗽𝘂𝗲𝗱𝗲 𝘂𝘀𝗮𝗿 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼⚡.`*_",
         mods: " _*`⚡ 𝗣𝗲𝗿𝗱𝗼𝗻, 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼 𝘀𝗼𝗹𝗼 𝗲𝘀 𝗽𝗮𝗿𝗮 𝗺𝗼𝗱𝘀⚡`*_",
         premium: " _*`🔑 𝗡𝗼 𝗲𝗿𝗲𝘀 𝘂𝗻 𝘂𝘀𝘂𝗮𝗿𝗶𝗼 𝗣𝗥𝗘𝗠𝗜𝗨𝗠, 𝗵𝗮𝗯𝗹𝗮 𝗰𝗼𝗻 𝗺𝗶 𝗢𝘄𝗻𝗲𝗿⚡`*_",
@@ -463,15 +463,15 @@ global.dfail = (type, m, conn, usedPrefix) => {
         admin: " _*`❌ 𝗤𝘂𝗶𝗲𝗻 𝗲𝗿𝗲𝘀? 𝗧𝘂 𝗡𝗢 𝗲𝗿𝗲𝘀 𝗮𝗱𝗺𝗶𝗻⚡`*_",
         botAdmin: " _*`⚠️ 𝗘𝘀 𝗻𝗲𝗰𝗲𝘀𝗮𝗿𝗶𝗼 𝗤𝘂𝗲 𝗦𝗲𝗮 𝗮𝗱𝗺𝗶𝗻 𝗣𝗥𝗜𝗠𝗘𝗥𝗢 𝗣𝗔𝗥𝗔 𝘂𝘀𝗮𝗿 𝗲𝘀𝘁𝗮 𝗳𝘂𝗻𝗰𝗶𝗼́𝗻⚡`*_",
         unreg: `
-╭──  ⚠️ *USUARIO NO REGISTRADO* ⚠️
+╭── ❗ *USUARIO NO REGISTRADO* ❗
 │ 🌸 No puedes usar este comando todavía.
 │
-│ ®️ *¿Cómo registrarse?*
-│ ✅ Usa: *.reg nombre.edad*
+│ 🔐 *¿Cómo registrarse?*
+│ 📌 Usa: *.reg nombre.edad*
 │
 │ ✏️ *Ejemplo:*
-│ ➤.reg Gawr Gura.18
-╰─────────────🦈 
+│ ➤.reg Miku.20
+╰─────────────🌸 
 `
     }[type]
     if (msg) return  conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))
