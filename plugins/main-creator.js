@@ -2,13 +2,13 @@
 import PhoneNumber from 'awesome-phonenumber';
 
 async function handler(m, { conn}) {
-  let numcreador = '595976126756';
+  let numcreador = '573133374132';
   let ownerJid = numcreador + '@s.whatsapp.net';
 
-  let name = await conn.getName(ownerJid) || '🌸 Adrian Developer';
-  let about = (await conn.fetchStatus(ownerJid).catch(() => {}))?.status || '💻 Creadora del bot *Miku Bot 🌸* y amante del desarrollo.';
-  let empresa = '✨ Software y Hosting ';
-  let imagen = 'https://qu.ax/VdOqJ.jpg';
+  let name = await conn.getName(ownerJid) || '💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖';
+  let about = (await conn.fetchStatus(ownerJid).catch(() => {}))?.status || '🦈 Creador del bot *Gawr Gura 🦈*.';
+  let empresa = '💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖';
+  let imagen = 'https://n.uguu.se/iLFFNQMb.jpg';
 
   const caption = `
 ╔═══🌸 *INFORMACIÓN DE LA CREADORA* 🌸═══╗
