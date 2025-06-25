@@ -30,7 +30,7 @@ var handler = async function (m, conn, db) {
 
     // Obtener información del usuario
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-    let fotoperfil = await conn.profilePictureUrl(who, 'image').catch(() => 'https://qu.ax/QGAVS.jpg')
+    let fotoperfil = await conn.profilePictureUrl(who, 'image').catch(() => 'https://d.uguu.se/XCfLcOEp.jpg')
 
     // Obtener nacionalidad
     let api = await axios.get(`https://deliriussapi-oficial.vercel.app/tools/country?text=${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}`)
@@ -41,13 +41,13 @@ var handler = async function (m, conn, db) {
     let pushname = m.pushName || 'Sin nombre'
 
     // Datos generales del bot
-    let creador = 'Wa.me/595976126756'
+    let creador = 'Wa.me/573133374132'
     let ofcbot = conn.user.jid.split('@')[0]
-    let asistencia = 'Wa.me/595976126756'
+    let asistencia = 'Wa.me/573133374132'
 
     // Lista de canales
-    let canalIdM = ["120363414007802886@newsletter", "120363414007802886@newsletter"]
-    let canalNombreM = ["bot Miku", "✧┊┋◟🚀Miku-Bot🚀◞┊┋✧"]
+    let canalIdM = ["120363419172960653@newsletter", "120363419172960653@newsletter"]
+    let canalNombreM = ["💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖", "✧┊┋◟🦈Gawr Gura🦈◞┊┋✧"]
     
     async function getRandomChannel() {
         let randomIndex = Math.floor(Math.random() * canalIdM.length)
@@ -106,8 +106,8 @@ var handler = async function (m, conn, db) {
                 title: "Texto del bot", 
                 body: '🚀 Adrián ᚐ҉ᚐ', 
                 previewType: "PHOTO", 
-                thumbnailUrl: "https://qu.ax/QGAVS.jpg", 
-                sourceUrl: "https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18", 
+                thumbnailUrl: "https://o.uguu.se/dHOFjNXs.png", 
+                sourceUrl: "https://whatsapp.com/channel/0029Vb5atcVL7UVQwAB9tU2k", 
                 mediaType: 1, 
                 renderLargerThumbnail: false 
             }
