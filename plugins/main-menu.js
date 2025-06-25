@@ -8,7 +8,7 @@ const clockString = ms => {
   return [h, m, s].map(v => v.toString().padStart(2, '0')).join(':');
 };
 
-const imagen = "https://i.ibb.co/LYZrgRs/The-Miku-Bot-MD.jpg";
+const imagen = "https://n.uguu.se/xoBDTdAA.jpg";
 
 const menuHeader = `
 ╭━━━「 🌸 The-MikuBot-MD 」━━━╮
@@ -23,9 +23,9 @@ const sectionDivider = `╰───────────────╯`;
 
 const menuFooter = `
 ╭────────────┈
-│ 💡 Usa cada comando con su prefijo.
-│ ✨ El bot perfecto para animarte.
-│ 🛠 Desarrollado por @Miku-Staff
+│ #️⃣ Usa cada comando con su prefijo.
+│ 🦈 La bot perfecta para animarte.
+│ 🐳 Desarrollado por 💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖
 ╰────────────┈
 `;
 
@@ -124,5 +124,5 @@ const fullMenu = `${finalHeader}\n\n${menuBody}\n\n${menuFooter}`.trim();
 }
 };
 
-handler.command = ['menu', 'help', 'menú'];
+handler.command = ['menu', 'help', 'allmenu', 'allmenú', 'Menu', 'menú'];
 export default handler;
