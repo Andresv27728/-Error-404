@@ -102,18 +102,18 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
         "👑 OWNER": new Set(),
         "👥 GRUPOS": new Set(),
         "🔧 HERRAMIENTAS": new Set(),
-        "🎵 AUDIOS": new Set(),
-        "🌐 BUSCADORES": new Set(),
+        "🎶 AUDIOS": new Set(),
+        "🔍 BUSCADORES": new Set(),
         "💰 ECONOMÍA": new Set(),
         "🔞 NSFW": new Set(),
         "🎨 ANIME": new Set(),
-        "⚙️ CONFIGURACIÓN": new Set(),
-        "🔄 CONVERTIDORES": new Set(),
+        "🔧 CONFIGURACIÓN": new Set(),
+        "🔁 CONVERTIDORES": new Set(),
         "📊 INFORMACIÓN": new Set(),
         "🎉 DIVERSIÓN": new Set(),
         "📱 STICKERS": new Set(),
         "✨ EFECTOS": new Set(),
-        "🏆 TOP": new Set(),
+        "🔝 TOP": new Set(),
         "📋 OTROS": new Set()
     }
 
@@ -124,18 +124,18 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
         'owner': "👑 OWNER",
         'group': "👥 GRUPOS",
         'tools': "🔧 HERRAMIENTAS",
-        'audio': "🎵 AUDIOS",
-        'search': "🌐 BUSCADORES",
+        'audio': "🎶 AUDIOS",
+        'search': "🔍 BUSCADORES",
         'economy': "💰 ECONOMÍA",
         'nsfw': "🔞 NSFW",
         'anime': "🎨 ANIME",
-        'config': "⚙️ CONFIGURACIÓN",
-        'convert': "🔄 CONVERTIDORES",
+        'config': "🔧 CONFIGURACIÓN",
+        'convert': "🔁 CONVERTIDORES",
         'info': "📊 INFORMACIÓN",
         'fun': "🎉 DIVERSIÓN",
         'sticker': "📱 STICKERS",
         'effect': "✨ EFECTOS",
-        'top': "🏆 TOP"
+        'top': "🔝 TOP"
     }
 
     for (let plugin of help) {
