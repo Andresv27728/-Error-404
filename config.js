@@ -9,11 +9,12 @@ import axios from 'axios'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
   global.owner = [
-  [ '573133374132', 'AdrianOficial', true ],
+  [ '595976126756', 'AdrianOficial', true ],
   [ '172056423456949@lid', 'Barboza', true ],
   [ '573162402768', 'BAJO BOTS', true ],
-  [ '50493732693', true ],
-  [ '51921826291']
+  [ '', true ],
+  [ '', true ],
+  [ '', true ]
   ]
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -23,18 +24,18 @@ global.prems = []
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.packname = `[ 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐁𝐲`
-global.author = 'Gawr Gura]'
-global.stickpack = 'Gawr Gura'
-global.stickauth = '𝐁𝐲 Gawr Gura'
-global.wm = 'Gawr Gura'
-global.dev = '💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖'
-global.wait = '*𝐏𝐨𝐫 𝐟𝐚𝐯𝐨𝐫 𝐚𝐠𝐮𝐚𝐫𝐝𝐞 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨\n\n> Gawr Gura*'
+global.author = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃]'
+global.stickpack = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
+global.stickauth = '𝐁𝐲 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
+global.wm = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
+global.dev = '𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐁𝐲 𝐓𝐞𝐜𝐧𝐨𝐥𝐨𝐠𝐢𝐬 𝐠𝐫𝐮𝐩'
+global.wait = '*𝐏𝐨𝐫 𝐟𝐚𝐯𝐨𝐫 𝐚𝐠𝐮𝐚𝐫𝐝𝐞 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨\n\n> 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃*'
 global.botname = '[ 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃 ]'
 global.textbot = `𝐓𝐞𝐜𝐧𝐨𝐥𝐨𝐠𝐢𝐬 𝐛𝐲 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃`
 global.dev = '𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐁𝐲 𝐓𝐞𝐜𝐧𝐨𝐥𝐨𝐠𝐢𝐬 𝐠𝐫𝐮𝐩'
 global.listo = '*𝐄𝐱𝐢𝐭𝐨*'
-global.namechannel = '💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖'
-global.channel = 'https://whatsapp.com/channel/0029Vb5atcVL7UVQwAB9tU2k'
+global.namechannel = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
+global.channel = 'https://whatsapp.com/channel/0029VaGt7Uk6WaKkEDZUh43W'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -43,9 +44,9 @@ global.miniurl = fs.readFileSync('./storage/img/miniurl.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.group = 'https://chat.whatsapp.com/DPDcHF49QoJ7KzwHvFBjiW'
-global.canal = 'https://whatsapp.com/channel/0029Vb5atcVL7UVQwAB9tU2k'
-global.insta = 'https://Instagram.com'
+global.group = 'https://chat.whatsapp.com/C92isvspFcXCtqv2PqCfHI'
+global.canal = 'https://whatsapp.com/channel/0029VaGt7Uk6WaKkEDZUh43W'
+global.insta = 'https://instagram.com/adri.analegresanchez'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -53,7 +54,7 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png');
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: packname, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 global.ch = {
-ch1'120363419172960653@newsletter'
+ch1:'120363209036072837@newsletter'
 }
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
